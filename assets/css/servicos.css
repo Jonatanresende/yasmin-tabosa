@@ -1,0 +1,93 @@
+/* Estilo da seção */
+.servicos {
+  background-color: #fff;
+  padding: 2rem 20px;
+}
+
+.servico-area {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.servico-titulo h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: hsl(210, 29%, 24%);
+  margin-bottom: 1rem;
+}
+
+.servico-descricao h3 {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.servico-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.servico-card {
+  background-color: #f1f1f1;
+  /* aspect-ratio: 1 / 1; Garante formato quadrado */
+  width: 300px;
+  height: 200px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.servico-card:hover {
+  background-color: #e0e0e0;
+}
+
+.servico-card .icon {
+  font-size: 4rem;
+  color: #ba2b31;
+  min-width: 30px;
+}
+
+.servico-card p {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* Responsivo para tablets e desktops */
+@media (min-width: 768px) {
+  .servico-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .servico-card {
+    flex: 0 1 calc(48%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .servico-card {
+    flex: 0 1 calc(32%);
+  }
+
+  .servico-titulo h2 {
+    font-size: 2.2rem;
+  }
+
+  .servico-descricao h3 {
+    font-size: 1.6rem;
+    max-width: 80%;
+    margin: 0 auto 2rem;
+  }
+}

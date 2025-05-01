@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3.2rem; /* 32px */
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.4rem; /* 24px */
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 2rem; /* 20px */
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%; /* Ocupa toda a largura disponível */
+  display: flex; /* Ativa o flexbox */
+  flex-direction: column; /* Alinha os filhos em coluna */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block; /* Elemento em linha com propriedades de bloco */
+  background-color: #25d366; /* Cor de fundo (verde WhatsApp) */
+  color: #fff; /* Cor do texto */
+  padding: 0.8rem 2rem; /* Espaçamento interno (topo/baixo, laterais) */
+  border: none; /* Sem borda */
+  border-radius: 8px; /* Borda arredondada */
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; /* Remove sublinhado */
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave em hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.btn:hover {
+  background-color: #1ebe5d; /* Cor mais escura ao passar o mouse */
+  transform: translateY(-3px); /* Eleva o botão ao passar o mouse */
+}

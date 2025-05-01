@@ -1,0 +1,50 @@
+.protecao {
+  position: relative; /* Define o posicionamento relativo para elementos filhos posicionados */
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../image/protecao-fundo.png); /* Aplica um gradiente escuro sobre a imagem de fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir todo o fundo */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  min-height: 100vh; /* Altura mínima igual à altura da tela */
+  padding: 30px 20px 0; /* Espaçamento interno: topo 30px, laterais 20px, baixo 0 */
+  margin: 0; /* Remove margens externas */
+  display: flex;
+}
+
+.protecao-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.protecao .icon {
+  font-size: 4rem;
+  color: #ba2b31;
+  min-width: 30px;
+  margin-bottom: 1rem;
+}
+
+.protecao h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.protecao p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .protecao-area {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .protecao-area p {
+    text-align: center;
+  }
+}
