@@ -12,6 +12,7 @@
 }
 
 .banner .destaque {
+  height: 100%;
   display: flex;
   flex-direction: column; /* Alinha os filhos (lado-esquerdo e lado-direito) em coluna */
   flex-grow: 1; /* Ocupa o espaço disponível */
@@ -71,6 +72,21 @@
   bottom: 0; /* Posiciona na base */
 }
 
+@media (min-width: 1440px) {
+  .banner .lado-direito img {
+    max-width: 500px; /* ou até maior, conforme necessário */
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+    width: 600px;
+  }
+
+  .banner .logo img {
+    width: 350px;
+  }
+}
+
 @media (min-width: 1024px) {
   /* Estilos aplicados a telas maiores (como desktops) */
   .banner {
@@ -82,7 +98,7 @@
   .banner .destaque {
     flex-direction: row; /* Alinha lado-esquerdo e lado-direito lado a lado */
     justify-content: space-between; /* Espaço entre os lados */
-    align-items: flex-end; /* Alinha ambos os lados na parte inferior */
+    align-items: center; /* Alinha ambos os lados na parte inferior */
   }
 
   .banner .lado-esquerdo {
@@ -107,7 +123,7 @@
 
   .banner .lado-direito {
     align-self: flex-end; /* Garante que fique na base */
-    margin-bottom: -1px; /* Pequeno ajuste de alinhamento */
+    margin-bottom: 0; /* Pequeno ajuste de alinhamento */
   }
 
   .banner .lado-direito img {
